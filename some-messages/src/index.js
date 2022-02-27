@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.css';
+import './css/barebones.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { startWebsocketConnection } from './chatsocket';
+
+startWebsocketConnection();
 
 ReactDOM.render(
   <React.StrictMode>
